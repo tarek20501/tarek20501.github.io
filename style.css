@@ -9,6 +9,10 @@ body, html {
     font-size: 20px;
     background-color: #203864;
     color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
 }
 
 a,h1, h2 {
@@ -20,14 +24,20 @@ header {
     border-radius: 20px;
     padding: 20px;
     color: white inherit !important;
+    border-left: 5px solid #b4c7e7;
+    border-right: 5px solid #b4c7e7;
 }
 
-#profile{
-    border-radius:100px;
+#profile {
+    border-left: 5px solid #b4c7e7;
+    border-right: 5px solid #b4c7e7;
+    border-radius: 100px;
+    vertical-align :middle;
 }
 
-#main_title{
+#main_title {
     font-size: 4em;
+    vertical-align: middle;
 }
 
 nav {
@@ -35,5 +45,5 @@ nav {
     background-color: #b4c7e7;
     color: #203864;
     line-height: 40px;
-    border-radius:20px;
+    border-radius: 20px;
 }
