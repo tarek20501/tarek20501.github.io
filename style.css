@@ -1,3 +1,39 @@
-p {
-    color: blue;
+/*
+    Dark:  #203864
+    Blue:  #2f5597
+    Light: #b4c7e7
+*/
+
+body, html {
+    font-family: Calibri,sans-serif;
+    font-size: 20px;
+    background-color: #203864;
+    color: white;
+}
+
+a,h1, h2 {
+    color: #b4c7e7;
+}
+
+header {
+    background-color: #2f5597;
+    border-radius: 20px;
+    padding: 20px;
+    color: white inherit !important;
+}
+
+#profile{
+    border-radius:100px;
+}
+
+#main_title{
+    font-size: 4em;
+}
+
+nav {
+    text-align: center;
+    background-color: #b4c7e7;
+    color: #203864;
+    line-height: 40px;
+    border-radius:20px;
 }
