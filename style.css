@@ -21,22 +21,23 @@ a,h1, h2 {
 
 header {
     background-color: #2f5597;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 10vw;
+    padding: 1vw;
     color: white inherit !important;
-    border-left: 5px solid #b4c7e7;
-    border-right: 5px solid #b4c7e7;
+    border-left: .5vw solid #b4c7e7;
+    border-right: .5vw solid #b4c7e7;
 }
 
 #profile {
-    border-left: 5px solid #b4c7e7;
-    border-right: 5px solid #b4c7e7;
-    border-radius: 100px;
+    border-left: .5vw solid #b4c7e7;
+    border-right: .5vw solid #b4c7e7;
+    border-radius: 7.5vw;
     vertical-align :middle;
+    width :15vw;
 }
 
 #main_title {
-    font-size: 4em;
+    font-size: 7vw;
     vertical-align: middle;
 }
 
@@ -44,6 +45,13 @@ nav {
     text-align: center;
     background-color: #b4c7e7;
     color: #203864;
-    line-height: 40px;
-    border-radius: 20px;
+    padding: 1vw;
+    border-radius: 5vw;
+}
+
+article {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
