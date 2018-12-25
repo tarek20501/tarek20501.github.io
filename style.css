@@ -21,7 +21,7 @@ a,h1, h2, h4, h5, h6 {
 
 header {
     background-color: #2f5597;
-    border-radius: 10vw;
+    border-radius: 10vh;
     color: white !important;
     border-left: .5vw solid #b4c7e7;
     border-right: .5vw solid #b4c7e7;
@@ -30,7 +30,7 @@ header {
 header td {
     width: 33vw;
     text-align: center;
-    font-size: 5vw;
+    font-size: 5vh;
     vertical-align: middle;
 }
 
@@ -44,7 +44,6 @@ header td {
 
 #ar_name {
     font-family: Calibri, sans-serif;
-    font-size: 7vw;
 }
 
 nav {
@@ -52,7 +51,7 @@ nav {
     background-color: #b4c7e7;
     color: #203864;
     padding: 0vw;
-    border-radius: 5vw;
+    border-radius: 5vh;
 }
 
 nav table {
@@ -66,7 +65,7 @@ nav table th {
     border-right: .1vw solid #203864;
     width: 20vw;
     font-size:3vh;
-    border-radius: 5vw;
+    border-radius: 5vh;
 }
 
 nav table th:hover {
