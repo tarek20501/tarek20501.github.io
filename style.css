@@ -26,6 +26,7 @@ header {
     color: white inherit !important;
     border-left: .5vw solid #b4c7e7;
     border-right: .5vw solid #b4c7e7;
+    text-align:center;
 }
 
 #profile {
@@ -33,11 +34,11 @@ header {
     border-right: .5vw solid #b4c7e7;
     border-radius: 7.5vw;
     vertical-align :middle;
-    width :15vw;
+    width :10vw;
 }
 
-#main_title {
-    font-size: 7vw;
+.main_title {
+    font-size: 5vw;
     vertical-align: middle;
 }
 
