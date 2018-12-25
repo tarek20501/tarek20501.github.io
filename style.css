@@ -57,7 +57,6 @@ nav {
 nav table {
     border: 0px;
     padding: .2%;
-    overflow:auto;
 }
 
 nav table th {
@@ -66,7 +65,7 @@ nav table th {
     border-left: .1vw solid #203864;
     border-right: .1vw solid #203864;
     width: 20vw;
-    padding: .5%;
+    font-size:2.3vh;
     border-radius: 5vw;
 }
 
