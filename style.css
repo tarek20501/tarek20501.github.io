@@ -15,18 +15,23 @@ body, html {
     margin-bottom: 0.5vw;
 }
 
-a,h1, h2 {
+a,h1, h2, h4, h5, h6 {
     color: #b4c7e7;
 }
 
 header {
     background-color: #2f5597;
     border-radius: 10vw;
-    padding: 1vw;
-    color: white inherit !important;
+    color: white !important;
     border-left: .5vw solid #b4c7e7;
     border-right: .5vw solid #b4c7e7;
-    text-align:center;
+}
+
+header td {
+    width: 30vw;
+    text-align: center;
+    font-size: 5vw;
+    vertical-align: middle;
 }
 
 #profile {
@@ -37,17 +42,43 @@ header {
     width :10vw;
 }
 
-.main_title {
-    font-size: 5vw;
-    vertical-align: middle;
+#ar_name{
+    font-family: Arabic Typesetting, Calibri, sans-serif;
+    font-size: 6vw;
 }
 
 nav {
     text-align: center;
     background-color: #b4c7e7;
     color: #203864;
-    padding: 1vw;
+    padding: 0vw;
     border-radius: 5vw;
+}
+
+nav table {
+    border: 0px;
+    padding: .2%;
+    overflow:auto;
+}
+
+nav table th {
+    border-top: .1vw solid #203864;
+    border-bottom: .1vw solid #203864;
+    border-left: .1vw solid #203864;
+    border-right: .1vw solid #203864;
+    width: 20vw;
+    padding: .5%;
+    border-radius: 5vw;
+}
+
+nav table th:hover {
+    border-left: .5vw solid #203864;
+    border-right: .5vw solid #203864;
+}
+
+#current_page {
+    border-left: .5vw solid #203864;
+    border-right: .5vw solid #203864;
 }
 
 article {
