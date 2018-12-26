@@ -2,6 +2,7 @@
     Dark:  #203864
     Blue:  #2f5597
     Light: #b4c7e7
+    hover: #dae3f3
 */
 
 body, html {
@@ -59,18 +60,28 @@ nav table {
 }
 
 nav table th {
-    border-top: .1vw solid #203864;
-    border-bottom: .1vw solid #203864;
-    border-left: .1vw solid #203864;
-    border-right: .1vw solid #203864;
     width: 20vw;
-    font-size:3vh;
+    font-size: 3vh;
     border-radius: 5vh;
+    }
+
+nav a {
+    display: block;
+    width: 100%;
+    color: #203864;
+    text-decoration: none;
 }
 
 nav table th:hover {
-    border-left: .5vw solid #203864;
-    border-right: .5vw solid #203864;
+    background-color: #dae3f3;
+}
+
+nav table th:active {
+    background-color: #203864;
+}
+
+nav table th a:active {
+    color: #b4c7e7;
 }
 
 #current_page {
