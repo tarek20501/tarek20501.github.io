@@ -13,7 +13,7 @@ body, html {
     margin-left: 1vw;
     margin-right: 1vw;
     margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
+    margin-bottom: 30px;
 }
 
 a,h1, h2, h4, h5, h6 {
@@ -26,6 +26,11 @@ header {
     color: white !important;
     border-left: .5vw solid #b4c7e7;
     border-right: .5vw solid #b4c7e7;
+    /*select disabled*/
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
 }
 
 header td {
@@ -43,16 +48,15 @@ header td {
     height :20vh;
 }
 
-#ar_name {
-    font-family: Calibri, sans-serif;
-}
-
 nav {
-    text-align: center;
     background-color: #b4c7e7;
     color: #203864;
-    padding: 0vw;
     border-radius: 5vh;
+    /*select disabled*/
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
 }
 
 nav table {
@@ -78,6 +82,7 @@ nav table th:hover {
 
 nav table th:active {
     background-color: #203864;
+    color: #b4c7e7;
 }
 
 nav table th a:active {
@@ -94,4 +99,28 @@ article {
     margin-right: 2vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
+}
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    position:fixed;
+    left: 0px;
+    right:0px;
+    bottom: 0px;
+    height: 25px;
+    background-color: #b4c7e7;
+    color:#203864;
+    overflow: auto;
+
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+footer div{
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 1 1 1px;
 }
