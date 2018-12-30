@@ -120,6 +120,8 @@ footer{
     background-color: #b4c7e7;
     color:#203864;
     font-size: 2vh;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
 
     white-space: nowrap;
     overflow: hidden;
