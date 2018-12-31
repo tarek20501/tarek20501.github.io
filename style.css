@@ -18,6 +18,11 @@ article a, article h1, article h2, article h4, article h5, article h6 {
     color: #b4c7e7;
 }
 
+article a{
+    text-decoration-line: none;
+    font-style: italic;
+}
+
 #top{
     position: fixed;
     top: 0px;
