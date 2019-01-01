@@ -137,6 +137,24 @@ article a{
     font-style: italic;
 }
 
+/*16 24 32 48 64*/
+
+#email{
+    list-style-image: url("https://www.iconsdb.com/icons/download/color/B4C7E7/inbox-8-32.png");
+}
+
+#facebook{
+    list-style-image: url("https://www.iconsdb.com/icons/download/color/B4C7E7/facebook-7-32.png");
+}
+
+#twitter{
+    list-style-image: url("https://www.iconsdb.com/icons/download/color/B4C7E7/twitter-4-32.png");
+}
+
+#instagram{
+    list-style-image: url("https://www.iconsdb.com/icons/download/color/B4C7E7/instagram-4-32.png");
+}
+
 /**************************Footer*********************************/
 
 footer{
