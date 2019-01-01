@@ -1,4 +1,5 @@
 /*
+Colors:
     Dark:  #203864
     Blue:  #2f5597
     Light: #b4c7e7
@@ -14,14 +15,7 @@ body, html {
     margin-bottom: 1vh;
 }
 
-article a, article h1, article h2, article h4, article h5, article h6 {
-    color: #b4c7e7;
-}
-
-article a{
-    text-decoration-line: none;
-    font-style: italic;
-}
+/**************************Header*********************************/
 
 #top{
     position: fixed;
@@ -50,7 +44,7 @@ header {
 }
 
 header td {
-    width: 33vw;
+    width: 50vw;
     text-align: center;
     font-size: 4vh;
     padding:0px;
@@ -62,8 +56,14 @@ header td {
     border-right: 5px solid #b4c7e7;
     border-radius: 5vh;
     vertical-align :middle;
-    height :10vh;
+    width :10vh;
 }
+
+#profile_cell{
+    width: 10vh;
+}
+
+/************************Navigation***********************************/
 
 nav {
     background-color: #b4c7e7;
@@ -90,6 +90,7 @@ nav table th {
     font-size: 2.5vh;
     line-height: 4vh;
     border-radius: 5vh;
+    padding: 0;
     }
 
 nav a {
@@ -112,6 +113,13 @@ nav table th a:active {
     color: #b4c7e7;
 }
 
+/************************Main***********************************/
+
+article {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
 a.anchor {
     display: block;
     position: relative;
@@ -119,10 +127,17 @@ a.anchor {
     visibility: hidden;
 }
 
-article {
-    margin-left: 2vw;
-    margin-right: 2vw;
+article h1, article h2, article h4, article h5, article h6 {
+    color: #b4c7e7;
 }
+
+article a{
+    color: #b4c7e7;
+    text-decoration-line: none;
+    font-style: italic;
+}
+
+/**************************Footer*********************************/
 
 footer{
     display: flex;
@@ -152,10 +167,11 @@ footer{
 
 #lfoot{
     margin-left: 1vw;
-    flex: 1 1 50vw;
+    flex: 0 1 50vw;
 }
 
 #rfoot{
     margin-right: 1vw;
-    flex: 1 1 50vw;
+    flex: 0 1 50vw;
 }
+/*********************The END********************************/
