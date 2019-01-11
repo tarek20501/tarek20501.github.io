@@ -7,7 +7,7 @@ Colors:
 */
 
 body, html {
-    font-family: Calibri,sans-serif;
+    font-family: Cambria,Calibri,sans-serif;
     font-size: 2.5vh;
     background-color: #203864;
     color: white;
@@ -61,6 +61,10 @@ header td {
 
 #profile_cell{
     width: 10vh;
+}
+
+#ar_name{
+    font-family: Arial, Calibri, sans-serif;
 }
 
 /************************Navigation***********************************/
