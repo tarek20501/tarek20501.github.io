@@ -18,16 +18,13 @@ class Portfolio {
         this.#body.style.color = '#C3E0E5';
         this.#body.style.fontFamily = 'Consolas';
 
-        this.#menu = new Menu(
-            () => this.changeContent(new AboutMe().getDiv()),
-            () => this.changeContent(new ProfessionalExperience().getDiv()));
+        this.#menu = new Menu(this.changeContent.bind(this));
         this.#body.appendChild(this.#menu.getDiv());
 
         this.#content = document.createElement('div');
         this.#body.appendChild(this.#content);
         this.#content.appendChild(new AboutMe().getDiv());
     }
-
 
     changeContent(newContent)
     {

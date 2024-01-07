@@ -3,18 +3,21 @@ class ProfessionalExperience
     #div;
 
     constructor()
+    {    
+        this.#div = ProfessionalExperience.#createDiv();
+        this.#div.appendChild(ProfessionalExperience.#createExperience("Solidigm"));
+        this.#div.appendChild(ProfessionalExperience.#createExperience("Intel"));
+        this.#div.appendChild(ProfessionalExperience.#createExperience("Avigilon"));
+    }
+
+    static #createDiv()
     {
         const div = document.createElement('div');
         div.id = 'content';
-        
-
-        this.#div = div;
-        this.#div.appendChild(this.createExperience("Solidigm"));
-        this.#div.appendChild(this.createExperience("Intel"));
-        this.#div.appendChild(this.createExperience("Avigilon"));
+        return div;
     }
 
-    createExperience(text)
+    static #createExperience(text)
     {
         const div = document.createElement('div');
         div.id = 'content';
