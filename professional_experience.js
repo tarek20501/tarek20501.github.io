@@ -1,35 +1,36 @@
 class ProfessionalExperience
 {
-    #div;
+    #container;
 
     constructor()
     {    
-        this.#div = ProfessionalExperience.#createDiv();
-        this.#div.appendChild(ProfessionalExperience.#createExperience("Solidigm"));
-        this.#div.appendChild(ProfessionalExperience.#createExperience("Intel"));
-        this.#div.appendChild(ProfessionalExperience.#createExperience("Avigilon"));
+        this.#createContainer();
+        this.#createExperience("Solidigm");
+        this.#createExperience("Intel");
+        this.#createExperience("Avigilon");
     }
 
-    static #createDiv()
+    #createContainer()
     {
-        const div = document.createElement('div');
-        div.id = 'content';
-        return div;
+        const container = document.createElement('div');
+        container.id = 'content';
+        this.#container = container;
     }
 
-    static #createExperience(text)
+    #createExperience(text)
     {
-        const div = document.createElement('div');
-        div.id = 'content';
-        div.textContent = text;
-        div.style.marginTop = '20px';
-        div.style.padding = '20px';
-        div.style.backgroundColor = "#5885AF";
-        return div;
+        const experience = document.createElement('div');
+        experience.id = 'content';
+        experience.textContent = text;
+        experience.style.marginTop = '20px';
+        experience.style.padding = '20px';
+        experience.style.backgroundColor = "#5885AF";
+
+        this.#container.appendChild(experience);
     }
 
-    getDiv()
+    getContainer()
     {
-        return this.#div;
+        return this.#container;
     }
 }

@@ -1,41 +1,54 @@
 class Menu 
 {
-    #div;
-    #button1;
-    #button2;
+    #container;
 
     constructor(changeContentFunc)
     {
-        this.#div = Menu.#createDiv();
-        this.#button1 = Menu.#createButton('About Me', () => changeContentFunc(new AboutMe().getDiv()));
-        this.#button2 = Menu.#createButton('Professional Experience', () => changeContentFunc(new ProfessionalExperience().getDiv()));
-        
-        this.#div.appendChild(this.#button1);
-        this.#div.appendChild(this.#button2);
+        this.#createContainer();
+
+        this.#createButton('About Me', 
+            () => changeContentFunc(new AboutMe().getContainer()));
+        this.#createButton('Professional Experience', 
+            () => changeContentFunc(new ProfessionalExperience().getContainer()));
     }
 
-    static #createDiv()
+    #createContainer()
     {
-        const div = document.createElement('div');
-        div.id = 'menu';
-        div.style.display = 'flex';
-        div.style.backgroundColor = '#41729F';
-        div.style.padding = '10px';
-        return div;
+        const container = document.createElement('div');
+        container.id = 'menu';
+        container.style.display = 'flex';
+        container.style.justifyContent = 'center';
+        container.style.alignContent = 'center';
+        container.style.backgroundColor = MID_LIGHT_BLUE;
+        container.style.padding = '10px';
+        container.style.borderBottomLeftRadius = '20px';
+        container.style.borderBottomRightRadius = '20px';
+        container.style.overflow = 'hidden';
+        container.style.boxShadow = SHADOW;
+
+        this.#container = container;
     }
 
-    static #createButton(text, clickHandler)
+    #createButton(text, clickHandler)
     {
         const button = document.createElement('button');
         button.textContent = text;
         button.style.marginRight = '10px';
+        button.style.padding = '10px';
+        button.style.fontFamily = 'Consolas';
         button.style.cursor = 'pointer';
+        button.style.backgroundColor = LIGHT_BLUE;
+        button.style.color = DARK_BLUE;
+        button.style.boxShadow = SHADOW;
+        button.style.border = 'none';
+        button.style.borderRadius = '10px';
         button.addEventListener('click', clickHandler);
-        return button;
+
+        this.#container.appendChild(button);
     }
 
-    getDiv()
+    getContainer()
     {
-        return this.#div;
+        return this.#container;
     }
 }
