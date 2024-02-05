@@ -1,5 +1,8 @@
 class Portfolio {
+    /** @type HTMLElement */
     #body;
+
+    /** @type HTMLDivElement */
     #content;
 
     constructor()
@@ -11,12 +14,10 @@ class Portfolio {
 
     #setupBody()
     {
-        const body = document.body;
-        body.style.backgroundColor = DARK_BLUE;
-        body.style.color = LIGHT_BLUE;
-        body.style.fontFamily = 'Consolas';
-        
-        this.#body = body;
+        this.#body = document.body;
+        this.#body.style.backgroundColor = DARK_BLUE;
+        this.#body.style.color = LIGHT_BLUE;
+        this.#body.style.fontFamily = 'Consolas';
     }
 
     #createMenu()
@@ -27,8 +28,7 @@ class Portfolio {
 
     #createContent()
     {
-        const content = document.createElement('div');
-        this.#content = content;
+        this.#content = document.createElement('div');
         this.#body.appendChild(this.#content);
         this.#content.appendChild(new AboutMe().getContainer());
     }

@@ -1,5 +1,6 @@
 class ProfessionalExperience
 {
+    /** @type HTMLDivElement */
     #container;
 
     constructor()
@@ -12,9 +13,8 @@ class ProfessionalExperience
 
     #createContainer()
     {
-        const container = document.createElement('div');
-        container.id = 'content';
-        this.#container = container;
+        this.#container = document.createElement('div');
+        this.#container.id = 'content';
     }
 
     #createExperience(text)

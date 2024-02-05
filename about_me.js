@@ -1,5 +1,6 @@
 class AboutMe
 {
+    /** @type HTMLDivElement */
     #container;
 
     constructor()
@@ -11,17 +12,15 @@ class AboutMe
 
     #createContainer()
     {
-        const div = document.createElement('div');
-        div.id = 'content';
-        div.style.marginTop = '20px';
-        div.style.padding = '20px';
-        div.style.backgroundColor = MID_DARK_BLUE;
-        div.style.justifyContent = 'center';
-        div.style.display = 'grid';
-        div.style.borderRadius = '10px';
-        div.style.boxShadow = SHADOW;
-
-        this.#container = div;
+        this.#container = document.createElement('div');
+        this.#container.id = 'content';
+        this.#container.style.marginTop = '20px';
+        this.#container.style.padding = '20px';
+        this.#container.style.backgroundColor = MID_DARK_BLUE;
+        this.#container.style.justifyContent = 'center';
+        this.#container.style.display = 'grid';
+        this.#container.style.borderRadius = '10px';
+        this.#container.style.boxShadow = SHADOW;
     }
 
     #createProfileImage()

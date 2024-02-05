@@ -1,5 +1,6 @@
 class Menu 
 {
+    /** @type HTMLDivElement */
     #container;
 
     constructor(changeContentFunc)
@@ -14,19 +15,17 @@ class Menu
 
     #createContainer()
     {
-        const container = document.createElement('div');
-        container.id = 'menu';
-        container.style.display = 'flex';
-        container.style.justifyContent = 'center';
-        container.style.alignContent = 'center';
-        container.style.backgroundColor = MID_LIGHT_BLUE;
-        container.style.padding = '10px';
-        container.style.borderBottomLeftRadius = '20px';
-        container.style.borderBottomRightRadius = '20px';
-        container.style.overflow = 'hidden';
-        container.style.boxShadow = SHADOW;
-
-        this.#container = container;
+        this.#container = document.createElement('div');
+        this.#container.id = 'menu';
+        this.#container.style.display = 'flex';
+        this.#container.style.justifyContent = 'center';
+        this.#container.style.alignContent = 'center';
+        this.#container.style.backgroundColor = MID_LIGHT_BLUE;
+        this.#container.style.padding = '10px';
+        this.#container.style.borderBottomLeftRadius = '20px';
+        this.#container.style.borderBottomRightRadius = '20px';
+        this.#container.style.overflow = 'hidden';
+        this.#container.style.boxShadow = SHADOW;
     }
 
     #createButton(text, clickHandler)
